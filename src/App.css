@@ -1,0 +1,74 @@
+body {
+	background: #141414;
+	color: #ffffff;
+	height: 100%;
+}
+
+.movies{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-height: 100vh;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.movie-list{
+	overflow-x: auto;
+	flex-wrap: nowrap;
+	height: 500px;
+	align-items: center;
+}
+.show-favourites-modal{
+	cursor: pointer;
+}
+
+.image-container {
+	display: flex;
+	position: relative;
+	transition: transform 0.2s;
+	flex-direction: column;
+	margin-right: 25px;
+}
+
+.image-container:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.image-container:hover .overlay {
+	opacity: 1;
+}
+
+.overlay {
+	position: absolute;
+	background: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	transition: 0.5s ease;
+	opacity: 0;
+	bottom: 0;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+img {
+	height: 300px;
+	width: 200px;
+}
+.ReactModal__Content{
+	background: #141414 !important;
+	display: flex;
+border-radius: 10px !important;
+}
+.movie-list-container{
+	align-items: center;
+	display: flex;
+
+}
+.close-modal{
+	height: fit-content;
+	border-radius: 20px;
+	background-color: black;
+	color: white;
+}
+
