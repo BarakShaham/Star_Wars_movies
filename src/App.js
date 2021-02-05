@@ -6,7 +6,7 @@ import AddFavourites from './components/AddFavourites';
 import FavouritesModal from "./components/FavouritesModal";
 import {Container, Row} from "react-bootstrap";
 import {BsFillHeartFill} from 'react-icons/bs'
-import {GetMovieRequest} from './GetMovieRequest'
+import {GetMovieRequest} from './API_requests/GetMovieRequest'
 
 const App = () => {
     const [movies, setMovies] = useState([]);

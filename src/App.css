@@ -19,6 +19,11 @@ body {
 	height: 500px;
 	align-items: center;
 }
+@media (max-width: 500px) {
+	.movie-list {
+		flex-direction: column;
+	}
+}
 .show-favourites-modal{
 	cursor: pointer;
 }
